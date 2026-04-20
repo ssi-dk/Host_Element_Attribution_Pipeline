@@ -1,18 +1,28 @@
 #!/bin/bash
 
+
 #setup script for the BLCA_analysis conda environment
 #creates the env, symlinks the BLCA command, and sets BLCA_CONFIG on activate
-#run once: bash conda_setup.sh
+#usage:
+#  bash conda_setup.sh [path/to/config.env]
+#If a config file is provided as the first argument, it will be used for BLCA_CONFIG.
+#Otherwise, the default config file is used.
 
 #written by Jon Slotved (JOSS@dksund.dk)
 
 set -e
 
+
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 ENV_YML="$PROJECT_DIR/pipeline_modules/conda_envs/BLCA_analysis.yml"
 BLCA_SCRIPT="$PROJECT_DIR/pipeline_modules/conda_envs/scripts/BLCA"
-CONFIG_FILE="$PROJECT_DIR/config/config.env"
+# Allow user to specify config file as first argument
+if [ -n "$1" ]; then
+    CONFIG_FILE="$1"
+else
+    CONFIG_FILE="$PROJECT_DIR/config/config.env"
+fi
 # echo "Script dir:####################################"
 # echo "${SCRIPT_DIR}"
 # echo
@@ -54,6 +64,7 @@ ln -sf "$BLCA_SCRIPT" "$CONDA_PREFIX/bin/BLCA"
 echo "creating a symlink of the BLCA executable (${BLCA_SCRIPT}) at (${CONDA_PREFIX}/bin/BLCA)"
 echo 
 
+
 #set BLCA_CONFIG on conda activate
 mkdir -p "$CONDA_PREFIX/etc/conda/activate.d"
 echo "export BLCA_CONFIG=\"$CONFIG_FILE\"" > "$CONDA_PREFIX/etc/conda/activate.d/blca_env_vars.sh"
@@ -67,7 +78,8 @@ echo "unset BLCA_CONFIG" > "$CONDA_PREFIX/etc/conda/deactivate.d/blca_env_vars.s
 echo
 echo "Setup complete!"
 echo "Usage:"
+echo "  bash conda_setup.sh [path/to/config.env]"
 echo "  conda activate BLCA_analysis"
-echo "  BLCA <assembly_folder> <host_tsv> [output_directory] [partition]"
+echo "  BLCA <assembly_folder> <host_tsv> [output_directory] [partition] [config_file]"
 echo
-echo ""
+echo "If you want to use a custom config file, provide it as the first argument to conda_setup.sh."

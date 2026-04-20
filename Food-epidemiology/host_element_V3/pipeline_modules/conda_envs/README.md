@@ -14,8 +14,19 @@ added a few more envs:
     blcm_R_basics.yml -- has a few basic libs for R, like tidyverse and optpar
     BLCA_analysis.yml -- this is a setup script, that defines the path for the config file
 
-UPDATE: envs to install
+UPDATE: envs to install - Jon Slotved (JOSS@DKSUND.dk)
+sorry..
+
+envs needed to use pipeline (can be found in /Food-epidemiology/host_element_V3/pipeline_modules/conda_envs):
+blcm_R_basics
+araclab_blcm_cge_dependencies
+araclab_blcm_kmodes_dependencies
+araclab_blcm_host_element_pipeline_dependencies
+mmseq2_env
+jags
+araclab_blcm_R_basics
+araclab_dependencies_fimtyper
+araclab_mlst_dependencies
 ```
-blcm_R_basics.yml
 
 ```
