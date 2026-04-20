@@ -100,7 +100,7 @@ hep_caller_jid=$(bash "$hep/host_element_pipeline_Submitter.sh" \
     "$partition" \
     "" \
     "$config_file" | tail -1)
-echo "HEP caller: $hep_caller_jid"
+echo "HEP caller (dependecy_flag): $hep_caller_jid"
 
 #mlst analysis
 #1 folder with fasta files
@@ -134,7 +134,7 @@ fimh_compiler_jid=$(bash "$fimh/Slurm_Array_Submitter.sh" \
     "$partition" \
     "" \
     "$config_file" | tail -1)
-echo "fimHtyper compiler: $fimh_compiler_jid"
+echo "fimHtyper compiler (dependecy_flag): $fimh_compiler_jid"
 
 #kmodes
 #1 kmodes input file
@@ -148,7 +148,7 @@ kmodes_pred_jid=$(bash "$kmodes/kmodes_SLURM_Submitter.sh" \
     "$partition" \
     "$cgmlst_compiler_jid" \
     "$config_file" | tail -1)
-echo "kmodes pred: $kmodes_pred_jid"
+echo "kmodes pred (dependecy_flag): $kmodes_pred_jid"
 
 #blcm
 blcm="$project_root/pipeline_modules/host_element_blcm/SB27_excludeBeefnTurkey_18022026"
@@ -170,11 +170,11 @@ blcm_jid=$(sbatch --parsable \
     "$mlst_results" \
     "$main_output_folder/blcm_output" \
 	"$config_file")
-echo "BLCM: $blcm_jid"
+echo "BLCM (dependecy_flag): $blcm_jid"
 
 #compile final output csv
 compile_script="$project_root/run_full_pipeline/helper_scripts/run_compile_blcm_output.sh"
-blcm_pred_scores="$main_output_folder/blcm_output/blcm_analysis.csv"
+blcm_pred_scores="$main_output_folder/blcm_output/blcm_output_pred_scores.csv"
 fimh_results="$main_output_folder/fimhtyper_analysis_output/compiled_files/results_compiled.txt"
 
 compile_jid=$(sbatch --parsable \

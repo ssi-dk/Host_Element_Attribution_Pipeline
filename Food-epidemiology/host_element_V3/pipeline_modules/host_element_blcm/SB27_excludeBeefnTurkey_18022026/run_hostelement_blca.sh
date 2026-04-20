@@ -82,7 +82,9 @@ Rscript "$host_element_blcm_scripts/hostelement_blca_kmodes_CLUST2_SSI_noBeefnTu
 
 if [ -f "${Folder_Output}_pred_scores.csv" ]; then
     echo "moving: ${Folder_Output}_pred_scores.csv"
-    mv "${Folder_Output}_pred_scores.csv" "$Folder_Output"
+    set -x
+    mv "${Folder_Output}_pred_scores.csv" "${Folder_Output}/blcm_analysis.csv"
+    set +x
 fi
 
 # Script Timer
