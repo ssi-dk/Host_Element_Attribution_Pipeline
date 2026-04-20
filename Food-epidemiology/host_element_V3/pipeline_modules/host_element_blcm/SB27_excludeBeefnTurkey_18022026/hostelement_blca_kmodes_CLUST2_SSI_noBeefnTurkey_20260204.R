@@ -244,5 +244,5 @@ colnames(res_dat)[1:5] <- c("pred_Human_CL1","pred_Human_CL2",
                             "pred_Chicken_CL1","pred_Chicken_CL2",
                             "pred_Pork")
 
-filename_pred <- paste(opts$o, "_pred_scores.csv", sep="")
-write.csv(res_dat, filename_pred)
+filename_pred <- file.path(opts$o, "blcm_output_pred_scores.csv")
+write.csv(res_dat, filename_pred, row.names = FALSE)
