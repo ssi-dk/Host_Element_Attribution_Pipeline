@@ -13,3 +13,9 @@ UPDATE: 08/04/2026 - Jon Slotved (JOSS@DKSUND.dk)
 added a few more envs:
     blcm_R_basics.yml -- has a few basic libs for R, like tidyverse and optpar
     BLCA_analysis.yml -- this is a setup script, that defines the path for the config file
+
+UPDATE: envs to install
+```
+blcm_R_basics.yml
+
+```
