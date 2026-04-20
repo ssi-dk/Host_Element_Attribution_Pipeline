@@ -17,12 +17,14 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 ENV_YML="$PROJECT_DIR/pipeline_modules/conda_envs/BLCA_analysis.yml"
 BLCA_SCRIPT="$PROJECT_DIR/pipeline_modules/conda_envs/scripts/BLCA"
-# Allow user to specify config file as first argument
-if [ -n "$1" ]; then
-    CONFIG_FILE="$1"
-else
-    CONFIG_FILE="$PROJECT_DIR/config/config.env"
+
+CONFIG_FILE="$1"
+
+if [ $# -lt 1 ];
+then
+    echo "add config as input conda_setup.sh <path/to/config.env>"
 fi
+# Allow user to specify config file as first argument
 # echo "Script dir:####################################"
 # echo "${SCRIPT_DIR}"
 # echo
