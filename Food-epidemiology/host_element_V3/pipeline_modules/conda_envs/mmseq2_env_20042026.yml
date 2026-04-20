@@ -1,0 +1,55 @@
+name: mmseq2_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - _libgcc_mutex=0.1
+  - _openmp_mutex=4.5
+  - aria2=1.37.0
+  - bzip2=1.0.8
+  - c-ares=1.34.4
+  - ca-certificates=2025.8.3
+  - gawk=5.3.1
+  - gmp=6.3.0
+  - ld_impl_linux-64=2.44
+  - libasprintf=0.23.1
+  - libblas=3.9.0
+  - libcblas=3.9.0
+  - libexpat=2.7.1
+  - libffi=3.4.6
+  - libgcc=14.2.0
+  - libgcc-ng=14.2.0
+  - libgettextpo=0.23.1
+  - libgfortran=14.2.0
+  - libgfortran5=14.2.0
+  - libgomp=14.2.0
+  - libiconv=1.17
+  - liblapack=3.9.0
+  - liblzma=5.6.4
+  - libmpdec=4.0.0
+  - libopenblas=0.3.29
+  - libsqlite=3.48.0
+  - libssh2=1.11.1
+  - libstdcxx=14.2.0
+  - libstdcxx-ng=14.2.0
+  - libuuid=2.38.1
+  - libxml2=2.13.5
+  - libzlib=1.3.1
+  - mmseqs2=17.b804f
+  - mpfr=4.2.1
+  - ncurses=6.5
+  - numpy=2.3.2
+  - openssl=3.5.2
+  - pandas=2.3.2
+  - pip=25.2
+  - python=3.13.2
+  - python-dateutil=2.9.0.post0
+  - python-tzdata=2025.2
+  - python_abi=3.13
+  - pytz=2025.2
+  - readline=8.2
+  - six=1.17.0
+  - tk=8.6.13
+  - tzdata=2025b
+  - zlib=1.3.1
+prefix: /dpssi/data/SSI/Conda_envs/mmseq2_env
