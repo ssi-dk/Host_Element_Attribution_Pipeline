@@ -148,4 +148,3 @@ dependencies:
   - xorg-libxxf86vm=1.1.6
   - xorg-xextproto=7.3.0
   - zstd=1.5.7
-prefix: /dpssi/data/SSI/Conda_envs/araclab_blcm_cge_dependencies

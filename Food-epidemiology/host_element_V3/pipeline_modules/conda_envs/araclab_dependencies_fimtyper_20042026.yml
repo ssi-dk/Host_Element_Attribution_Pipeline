@@ -248,4 +248,4 @@ dependencies:
   - xz-tools=5.8.1
   - zlib=1.2.13
   - zstd=1.5.6
-prefix: /dpssi/data/SSI/Conda_envs/araclab_dependencies_fimtyper
+

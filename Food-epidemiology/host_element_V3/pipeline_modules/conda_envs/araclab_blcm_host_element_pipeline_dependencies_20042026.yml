@@ -44,4 +44,3 @@ dependencies:
   - wheel=0.45.1
   - xlsxwriter=3.2.5
 prefix: 
-  /dpssi/data/SSI/Conda_envs/araclab_blcm_host_element_pipeline_dependencies

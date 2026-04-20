@@ -47,4 +47,3 @@ dependencies:
   - tk=8.6.13
   - tzdata=2025b
   - wheel=0.45.1
-prefix: /dpssi/data/SSI/Conda_envs/araclab_blcm_kmodes_dependencies
