@@ -1,0 +1,8 @@
+name: blcm_kmodes_dependencies
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - kmodes
+  - pandas

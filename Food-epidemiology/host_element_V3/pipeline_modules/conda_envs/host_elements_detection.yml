@@ -1,0 +1,9 @@
+name: blcm_host_element_pipeline_dependencies
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - xlsxwriter
+  - numpy
+  - pandas

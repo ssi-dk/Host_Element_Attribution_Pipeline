@@ -1,0 +1,10 @@
+name: blcm_cge_dependencies
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - ete3
+  - pandas
+  - biopython
+  - prodigal

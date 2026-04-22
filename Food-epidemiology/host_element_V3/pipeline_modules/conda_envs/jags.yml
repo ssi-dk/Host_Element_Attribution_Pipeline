@@ -1,0 +1,20 @@
+name: jags
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - liblapack=3.9.0=16_linux64_openblas
+  - libgfortran5=12.1.0=hdcd56e2_16
+  - libgfortran-ng=12.1.0=h69a702a_16
+  - _openmp_mutex=4.5=2_gnu
+  - libblas=3.9.0=16_linux64_openblas
+  - jags=4.3.0=h236a147_1004
+  - _libgcc_mutex=0.1=conda_forge
+  - libstdcxx-ng=12.1.0=ha89aaad_16
+  - libgomp=12.1.0=h8d9b700_16
+  - libopenblas=0.3.21=pthreads_h78a6416_3
+  - libgcc-ng=12.1.0=h8d9b700_16
+  - r-r2jags=0.7_1
+  - r-base=4.1.1
+  - r-label.switching
+prefix: /dpssi/data/SSI/Conda_envs/jags

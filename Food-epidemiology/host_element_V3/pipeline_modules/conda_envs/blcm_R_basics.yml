@@ -1,0 +1,8 @@
+name: blcm_R_basics
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-optparse=1.7.3
+  - r-base[version='>=4.1.1']
+  - r-tidyverse

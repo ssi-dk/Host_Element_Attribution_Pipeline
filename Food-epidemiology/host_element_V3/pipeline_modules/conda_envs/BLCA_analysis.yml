@@ -1,5 +1,0 @@
-name: BLCA_analysis
-channels:
-  - defaults
-dependencies:
-  - pip

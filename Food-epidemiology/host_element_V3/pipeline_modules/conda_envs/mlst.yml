@@ -1,0 +1,16 @@
+name: mlst_dependencies
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - blast[version='>=2.16.0']
+  - bats-core
+  - perl-moo
+  - any2fasta[version='>=0.6.0']
+  - perl-file-which
+  - perl[version='>=5.32']
+  - perl-json
+  - zlib
+  - perl-list-moreutils
+  - perl-bioperl[version='>=1.7.2']
+prefix: /dpssi/data/SSI/Conda_envs/araclab_mlst_dependencies
