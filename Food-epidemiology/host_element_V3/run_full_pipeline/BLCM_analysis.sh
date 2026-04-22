@@ -50,6 +50,7 @@ if [ -z "$input_folder" ] || [ -z "$host_info" ]; then
     exit 1
 fi
 
+
 #create file system
 input_folder=$(cd "$input_folder" && pwd)
 host_info=$(readlink -f "$host_info")
@@ -58,6 +59,11 @@ main_output_folder=$(cd "$main_output_folder" && pwd)
 mkdir -p "$main_output_folder/tmp_analysis"
 cd "$main_output_folder" || { echo "ERROR: cannot cd to $main_output_folder"; exit 1; }
 # cat "$host_info" | awk -F'\t' '{print $1}' | sed 's/$/\.fasta/' | tail -n +2 > tmp_analysis/sample_list.txt
+
+#clean host_info input
+echo -e "Genome_Ref\tHost" > "$main_output_folder/tmp_analysis/host_info_clean.tsv"
+tail -n +2 | cut -f1,2 "$host_info" >> "$main_output_folder/tmp_analysis/host_info_clean.tsv"
+host_info_clean="$main_output_folder/tmp_analysis/host_info_clean.tsv"
 
 awk -F'\t' 'NR>1{print $1}' "$host_info" | while read -r sample; do
     found_isolate=$(ls "$input_folder"/"$sample".f*)
@@ -95,7 +101,7 @@ hep="$project_root/pipeline_modules/host_element_pipeline/scripts"
 hep_caller_jid=$(bash "$hep/host_element_pipeline_Submitter.sh" \
     "$input_folder" \
     "$sample_list" \
-    "$host_info" \
+    "$host_info_clean" \
     hep_analysis \
     "$partition" \
     "" \
@@ -166,7 +172,7 @@ blcm_jid=$(sbatch --parsable \
     "$blcm/run_hostelement_blca.sh" \
     "$kmodes_predictions" \
     "$hep_elements" \
-    "$host_info" \
+    "$host_info_clean" \
     "$mlst_results" \
     "$main_output_folder/blcm_output" \
 	"$config_file")
