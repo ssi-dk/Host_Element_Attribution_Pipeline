@@ -12,7 +12,7 @@ Job_Name_input=$3
 Partition_input=${4:-project}  # optional; defaults to "project"
 dependency=${5:-}
 #config file as last argument
-config_file_local="/dpssi/data/Projects/mtg_host_elements_files_and_output/proj/general_JonThesis/Food-epidemiology/host_element_V3/config/config.env"
+config_file_local="/dpssi/data/Projects/mtg_host_elements_files_and_output/proj/Host_Element_Attribution_Pipeline/Food-epidemiology/host_element_V3/config/config.env"
 config_file=${6:-${config_file_local}}
 
 # Script Locations (Path to where all slurm-array scripts live, use `pwd` to find path.

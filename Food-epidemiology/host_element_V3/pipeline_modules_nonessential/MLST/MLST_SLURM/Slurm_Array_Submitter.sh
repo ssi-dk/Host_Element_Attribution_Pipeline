@@ -11,9 +11,9 @@ Data_Folder_input=$1
 Data_Folder_Samplelist_input=$2
 Job_Name_input=$3
 Partition_input=${4:-project}  # optional; defaults to "project"
-dependency=${5:-}
+dependency=${5:-} # optional; defaults to "nothing"
 # Config file as last argument
-config_file_local="/dpssi/data/Projects/mtg_host_elements_files_and_output/proj/general_JonThesis/Food-epidemiology/host_element_V3/config/config.env"
+config_file_local="/dpssi/data/Projects/mtg_host_elements_files_and_output/proj/Host_Element_Attribution_Pipeline/Food-epidemiology/host_element_V3/config/config.env"
 config_file=${6:-${config_file_local}}
 
 echo "config from MLST_Submitter: $config_file"

@@ -16,17 +16,14 @@ date: 22/04/2026
 
 2. **Set up the environment**
 	- (If using conda)
-    - there are multiple environments to install
+    - there are multiple environments to install see host_element_V3/pipeline_modules/conda_envs
 	  ```sh
 	  conda env create -f <environment-file>.yml
-	  conda activate <env-name>
+
 	  ```
 	- fimtyper has to be installed on its own, since env export is not possible https://bitbucket.org/genomicepidemiology/fimtyper/src/master/
-	- mlstfinder 
-	- xx
-	- you should still install it in an environment and fill out the config.env
+		- you should still install it in an environment and fill out the config.env
 
-fimtyper requires manual install
 
 3. **Configure environment variables**
 	- Copy the example config and edit as needed:
