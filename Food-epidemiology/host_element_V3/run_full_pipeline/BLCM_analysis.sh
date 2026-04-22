@@ -62,7 +62,7 @@ cd "$main_output_folder" || { echo "ERROR: cannot cd to $main_output_folder"; ex
 
 #clean host_info input
 echo -e "Genome_Ref\tHost" > "$main_output_folder/tmp_analysis/host_info_clean.tsv"
-tail -n +2 | cut -f1,2 "$host_info" >> "$main_output_folder/tmp_analysis/host_info_clean.tsv"
+tail -n +2 "$host_info" | cut -f1,2 >> "$main_output_folder/tmp_analysis/host_info_clean.tsv"
 host_info_clean="$main_output_folder/tmp_analysis/host_info_clean.tsv"
 
 awk -F'\t' 'NR>1{print $1}' "$host_info" | while read -r sample; do
