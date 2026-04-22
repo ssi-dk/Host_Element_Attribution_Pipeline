@@ -1,2 +1,2 @@
-This folder should be ussed to install dependencies.
-it should not be included in the 
+This folder should be used to place dependencies like dbs and kmas.
+it should not be pushed to github
