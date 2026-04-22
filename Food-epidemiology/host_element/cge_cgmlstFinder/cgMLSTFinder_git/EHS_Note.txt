@@ -1,3 +1,0 @@
-These are files copied from cge cgMLSTFinder git, with the additional of my modified version of the cgMLST.py to perform md5sum call instead, along with the CGE_cgMLST_md5_converter.py
-
-https://bitbucket.org/genomicepidemiology/cgmlstfinder/src/master/

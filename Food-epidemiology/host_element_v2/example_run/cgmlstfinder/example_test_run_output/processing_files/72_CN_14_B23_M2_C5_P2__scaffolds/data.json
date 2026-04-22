@@ -1,1 +1,0 @@
-{"cgMLSTFinder": {"user_input": {"filenames": "example_data//72_CN_14_B23_M2_C5_P2__scaffolds.fasta", "species": "ecoli"}, "run_info": {"date": "25.08.2025", "time": "16:24:28"}, "results": {"72_CN_14_B23_M2_C5_P2__scaffolds": {"called_alleles": "2386", "perc_called_alleles": "94.95", "cgST": "135555", "allele_matches": 2345, "perc_allele_matches": "93.31"}}}}

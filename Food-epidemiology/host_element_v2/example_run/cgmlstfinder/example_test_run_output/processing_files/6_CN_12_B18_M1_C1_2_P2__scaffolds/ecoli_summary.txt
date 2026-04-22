@@ -1,2 +1,0 @@
-Sample_name	Total_number_of_loci	Number_of_called_alleles	%_Called_alleles	cgST	Allele_matches_in_cgST	%_Allele_matches
-6_CN_12_B18_M1_C1_2_P2__scaffolds	2513	2381	94.75	75222	1990	79.19

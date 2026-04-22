@@ -1,2 +1,0 @@
-Sample_name	Total_number_of_loci	Number_of_called_alleles	%_Called_alleles	cgST	Allele_matches_in_cgST	%_Allele_matches
-FMC_UTI_01386__scaffolds	2513	2393	95.22	59311	2354	93.67

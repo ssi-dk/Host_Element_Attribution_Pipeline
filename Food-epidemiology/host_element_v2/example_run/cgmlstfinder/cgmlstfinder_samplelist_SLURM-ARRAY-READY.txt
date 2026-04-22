@@ -1,5 +1,0 @@
-0__@__1__@__6_CN_12_B18_M1_C1_2_P2__scaffolds.fasta
-0__@__2__@__72_CN_14_B23_M2_C5_P2__scaffolds.fasta
-0__@__3__@__Escherichia_coli_45_CN-19_B22_M1_C1_2_P1__scaffolds.fasta
-0__@__4__@__FMC_UTI_01386__scaffolds.fasta
-0__@__5__@__FMC_UTI_03085__scaffolds.fasta

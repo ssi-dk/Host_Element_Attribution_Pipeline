@@ -1,5 +1,0 @@
-6_CN_12_B18_M1_C1_2_P2__scaffolds-500bpTrimmed.fasta
-72_CN_14_B23_M2_C5_P2__scaffolds-500bpTrimmed.fasta
-Escherichia_coli_45_CN-19_B22_M1_C1_2_P1__scaffolds-500bpTrimmed.fasta
-FMC_UTI_01386__scaffolds-500bpTrimmed.fasta
-FMC_UTI_03085__scaffolds-500bpTrimmed.fasta

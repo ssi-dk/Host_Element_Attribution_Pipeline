@@ -1,6 +1,0 @@
-SampleID	MLST
-6_CN_12_B18_M1_C1_2_P2__scaffolds	409
-72_CN_14_B23_M2_C5_P2__scaffolds	398
-Escherichia_coli_45_CN-19_B22_M1_C1_2_P1__scaffolds	117
-FMC_UTI_01386__scaffolds	555
-FMC_UTI_03085__scaffolds	410

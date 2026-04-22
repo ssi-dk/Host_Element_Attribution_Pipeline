@@ -1,2 +1,0 @@
-/scratch/liu_price_lab/ehsung/github/Development/ehsung/microbiome/mmseq2/scripts/python_scripts/mmseq2_results_replicate_combine.py:75: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
-  main_data_df = pd.concat((main_data_df, rawData), axis=0)

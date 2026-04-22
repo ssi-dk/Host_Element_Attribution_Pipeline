@@ -1,6 +1,0 @@
-Genome_Ref	Host
-6_CN_12_B18_M1_C1_2_P2	Chicken
-72_CN_14_B23_M2_C5_P2	Turkey
-Escherichia_coli_45_CN-19_B22_M1_C1_2_P1	Chicken
-FMC_UTI_01386	Human
-FMC_UTI_03085	Human

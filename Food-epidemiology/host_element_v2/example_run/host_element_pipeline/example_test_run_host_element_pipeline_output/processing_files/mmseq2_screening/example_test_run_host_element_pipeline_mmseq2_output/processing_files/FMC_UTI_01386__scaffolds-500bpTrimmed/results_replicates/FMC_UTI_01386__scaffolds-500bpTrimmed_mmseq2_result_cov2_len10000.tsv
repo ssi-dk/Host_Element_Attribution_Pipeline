@@ -1,2 +1,0 @@
-Query_Seq-id	Subject_Seq-id	Percent_Identity	Query_Coverage	Subject_Coverage	Alignment_Length	Mismatches	GapOpenings	Query_Length	Query_Start	Query_End	Subject_Length	Subject_Start	Subject_End	E-Value	Bitscore	Cigar
-NODE_1_length_543735_cov_10.2431_ID_1	EL35_H3_dltA_3	99.900	0.016	0.901	8672	9	0	543735	1329	10000	9621	51	8722	0.000E+00	15534	8672M

@@ -1,2 +1,0 @@
-Sample_name	Total_number_of_loci	Number_of_called_alleles	%_Called_alleles	cgST	Allele_matches_in_cgST	%_Allele_matches
-Escherichia_coli_45_CN-19_B22_M1_C1_2_P1__scaffolds	2513	2398	95.42	87147	2389	95.07

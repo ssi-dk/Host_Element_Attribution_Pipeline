@@ -1,1 +1,0 @@
-../../mlstfinder/run_mlstfinder.sh

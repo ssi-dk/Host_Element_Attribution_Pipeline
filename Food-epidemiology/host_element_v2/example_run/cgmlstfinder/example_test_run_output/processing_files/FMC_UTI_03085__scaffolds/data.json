@@ -1,1 +1,0 @@
-{"cgMLSTFinder": {"user_input": {"filenames": "example_data//FMC_UTI_03085__scaffolds.fasta", "species": "ecoli"}, "run_info": {"date": "25.08.2025", "time": "16:24:48"}, "results": {"FMC_UTI_03085__scaffolds": {"called_alleles": "2402", "perc_called_alleles": "95.58", "cgST": "86239", "allele_matches": 2398, "perc_allele_matches": "95.42"}}}}
